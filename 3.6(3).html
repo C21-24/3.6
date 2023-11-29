@@ -1,0 +1,35 @@
+//3.4(3)//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фокус</title>
+</head>
+<body>
+
+    <label for="focusInput">Текстове поле:</label>
+    <input type="text" id="focusInput">
+    <button onclick="displayMessage()">Кнопка</button>
+
+    <script>
+        // Отримання посилання на текстове поле
+        var focusInput = document.getElementById("focusInput");
+
+        // Додавання обробників подій для фокусу та втрати фокусу
+        focusInput.addEventListener("focus", function() {
+            displayMessage("Елемент отримав фокус");
+        });
+
+        focusInput.addEventListener("blur", function() {
+            displayMessage("Елемент втратив фокус");
+        });
+
+        // Функція для виведення повідомлення
+        function displayMessage(message) {
+            alert(message);
+        }
+    </script>
+
+</body>
+</html>

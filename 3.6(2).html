@@ -1,0 +1,25 @@
+//3.4(2)//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Field Page</title>
+</head>
+<body>
+
+    <input type="text" id="myInput" placeholder="Введіть текст">
+
+    <script>
+        // Отримуємо текстове поле за ідентифікатором
+        var inputField = document.getElementById("myInput");
+
+        // Додаємо обробник події для введення тексту
+        inputField.addEventListener("input", function() {
+            console.log("Клавіша була натиснута");
+        });
+    </script>
+
+</body>
+</html>
+
